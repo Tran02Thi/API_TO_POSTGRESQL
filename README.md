@@ -1,11 +1,15 @@
 # API_TO_POSTGRESQL
 
 ## I. Introduction
+
 ### 1. The gold of this project
+
 This project is to build a simple ETL pipeline to fetch real-time data from an open source API and store that data into a database. For this case I have used Yelp FUSION API as the open source API available and for database I used Postgres and used Docker to deloy application.
 
 ## II. Detail File
+
 ### 1. Config File
+
 ```
 [KEYS]
 API_KEY=<YOUR API KEY>
@@ -20,8 +24,8 @@ port=<PORT>
 
 ```
 
-
 ### 2. File
+
 ```
 auth.py - Contains configuration variable for making HTTP Request
 
@@ -37,6 +41,7 @@ driver.py - Entry point for the application, contains parsing command line argum
 ```
 
 ## II. Deploy
+
 ```
   Folder:
         Docker:
@@ -46,28 +51,32 @@ driver.py - Entry point for the application, contains parsing command line argum
 ```
 
 ## How To Run
-  Run with Makefile
-  ```
-  I use Makefiles for all my projects to have a way to install and run them
-  Makefile:
-        To compile each, run the following commands:
-            To run container Postgresql with: 
-                  make up
-            To stop container Postgresql with: 
-                  make down
-            To restart container Postgresql with: 
-                  make restart
-            To run application with : 
-                  make run
-            * make run is equivalent to `python driver.py --term food --location 'United States' --price 1` 
-  ```
-  Run with file .py
-  ```
-  To compile each, run the following commands:
-      To run application with : 
-          python main.py
-  ```
 
+Run with Makefile
+
+```
+I use Makefiles for all my projects to have a way to install and run them
+Makefile:
+      To compile each, run the following commands:
+          To run container Postgresql with:
+                make up
+          To stop container Postgresql with:
+                make down
+          To restart container Postgresql with:
+                make restart
+          To run application with :
+                make run
+          * make run is equivalent to `python driver.py --term food --location 'United States' --price 1`
+```
+
+Run with file .py
+
+```
+To compile each, run the following commands:
+    To run application with :
+        python main.py
+```
 
 ## Results
+
 ![RESULTS](https://github.com/Tran02Thi/API_TO_POSTGRESQL/blob/main/images/Result.png)
