@@ -47,6 +47,7 @@ driver.py - Entry point for the application, contains parsing command line argum
 
 ## How To Run
   I use Makefiles for all my projects to have a way to install and run them
+  ```
   Makefile:
         To compile each, run the following commands:
             To run container Postgresql with : 
@@ -66,7 +67,7 @@ driver.py - Entry point for the application, contains parsing command line argum
                   make run
             ``
             make run is equivalent to `python driver.py --term food --location 'United States' --price 1` 
-
+ ```
 
 
 ## Results
