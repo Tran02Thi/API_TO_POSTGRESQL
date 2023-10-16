@@ -1,7 +1,7 @@
 create_business_schema = """CREATE SCHEMA IF NOT EXISTS yelp;"""
 
 create_business_table = """
-    CREATE TABLE IF NOT EXISTS yelp.food (
+    CREATE TABLE IF NOT EXISTS yelp.FOOD (
         business_id varchar PRIMARY KEY,
         business_name varchar,
         image_url varchar,

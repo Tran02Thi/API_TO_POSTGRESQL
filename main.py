@@ -13,8 +13,7 @@ if __name__ == '__main__':
 
     paramester = {
         'term': 'food',
-        'location': 'Chicago',
-        'categories': 'orthotics[GB, DK, US]',
+        'location': 'United States',
         'price': 2
     }
 
@@ -22,6 +21,6 @@ if __name__ == '__main__':
     db = DatabaseDriver()
     db.setup()
 
-    queries = [insert_business_table.format(*to_string(result)) for result in search.get_result()]
+    queries = [insert_business_table.format(*to_string(result)) for result in search.get_results()]
     query_to_execute = "BEGIN; \n" + '\n'.join(queries) + "\nCOMMIT;"
     db.execute_query(query_to_execute)

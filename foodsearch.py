@@ -3,8 +3,8 @@ import requests
 
 
 class FoodSearch:
-    def __init__(self, term, location,  categories, price=None):
-        self._param = {'term': term, 'location': location, 'categories': categories}
+    def __init__(self, term, location, price=None):
+        self._param = {'term': term, 'location': location}
         if price:
             self._param['price'] = price
         self._base_url= f"https://api.yelp.com/v3/transactions/delivery/search"
@@ -32,5 +32,5 @@ class FoodSearch:
     def _add_escape_character(self, data):
         return data.replace("'", "''")
 
-    def get_result(self):
+    def get_results(self):
         return [ self._parse_result(business) for business in self._food_list]
