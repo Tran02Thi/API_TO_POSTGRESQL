@@ -50,23 +50,15 @@ driver.py - Entry point for the application, contains parsing command line argum
   ```
   Makefile:
         To compile each, run the following commands:
-            To run container Postgresql with : 
-            ``
+            To run container Postgresql with: 
                   make up
-            ``
-            To stop container Postgresql with : 
-            ``
+            To stop container Postgresql with: 
                   make down
-            ``
-            To restart container Postgresql with : 
-            ``
+            To restart container Postgresql with: 
                   make restart
-            ``
             To run application with : 
-            ``
                   make run
-            ``
-            make run is equivalent to `python driver.py --term food --location 'United States' --price 1` 
+            * make run is equivalent to `python driver.py --term food --location 'United States' --price 1` 
   ```
 
 
