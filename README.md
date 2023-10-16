@@ -1,7 +1,7 @@
 # API_TO_POSTGRESQL
 
 ## I. Introduction
-### 1.The gold of this project
+### 1. The gold of this project
 This project is to build a simple ETL pipeline to fetch real-time data from an open source API and store that data into a database. For this case I have used Yelp FUSION API as the open source API available and for database I used Postgres and used Docker to deloy application.
 
 ## II. Detail File
