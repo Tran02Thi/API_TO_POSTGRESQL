@@ -67,7 +67,7 @@ driver.py - Entry point for the application, contains parsing command line argum
                   make run
             ``
             make run is equivalent to `python driver.py --term food --location 'United States' --price 1` 
- ```
+  ```
 
 
 ## Results
